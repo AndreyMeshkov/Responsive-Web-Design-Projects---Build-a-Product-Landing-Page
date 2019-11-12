@@ -3,7 +3,7 @@ body {
 }
 
 #header {
-    height:50px;   
+    height:1.5em;   
     background: #F5F5F5;
     width: 100%;
     position: fixed;
@@ -12,11 +12,22 @@ body {
 
 #header-img {
     width: 25%;
-    float:left;
+    float: left;
  }
 
  #nav-bar {
-   
-  }
+   display: flex;
+   width: 30%;
+   justify-content: space-between;
+   }
 
-  
+.nav-link {
+    justify-content: center; 
+    width: 33%;
+    height: 1.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 1.5em;
+ } 
