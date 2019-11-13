@@ -31,3 +31,9 @@ body {
     text-align: center;
     line-height: 1.5em;
  } 
+
+ @media screen and (max-width: 900px) {
+     .nav-link {
+         font-size: 1em;
+     }
+ }
