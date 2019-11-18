@@ -7,93 +7,95 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      
 </head>
 <body>
     <header id ="header">
         <div class="logo">
             <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo" id="header-img">
-            <nav id="nav-bar">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#howitworks" class="nav-link">How It Works</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-            </nav>
         </div>
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#howitworks" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+       
     </header>
     <main>
-        <h2>Handcrafted, home-made masterpieces</h2>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-           <label for="email"></label> 
-           <input type="email" id="email" name="email" placeholder="Enter your email address">
-           <label for="submit"></label>
-           <input type="submit" value="GET STARTED" id="submit" name="submit">
-        </form>
-        <section id="features">
-            <div>
-                <i class="fa fa-fire fa-3x"></i>
-                <h2>Premium Materials</h2>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-            </div>
-            <div>
-                <i class="fa fa-truck fa-3x"></i>
-                <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-            </div>
-            <div>
-                <i class="fa fa-battery-full fa-3x"></i>
-                <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-            </div>    
+        <section class="formsection">
+            <h2>Handcrafted, home-made masterpieces</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email"></label> 
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <label for="submit"></label>
+            <input type="submit" value="GET STARTED" id="submit" name="submit">
+            </form>
         </section>
-        <div id="howitworks">
-           
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           
+        <div class="conteiner">
+            <section id="features">
+                <div class="icon">
+                    <i class="fa fa-fire fa-3x"></i>
+                </div>
+                <div class="desc"> 
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-truck fa-3x"></i>
+                </div>
+                <div class="desc">    
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-battery-full fa-3x"></i>
+                </div>
+                <div class="desc">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>    
+            </section>
+            <div id="howitworks">
+            
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            </div>
+            <section id="pricing">
+                <div class="tenor">
+                    <div>TENOR TROMBONE</div>
+                    <h2>$600</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button>SELECT</button>
+                </div>
+                <div class=bass>
+                        <div>BASS TROMBONE</div>
+                        <h2>$900</h2>
+                        <ol>
+                            <li>Lorem ipsum.</li>
+                            <li>Lorem ipsum.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum.</li>
+                        </ol>
+                        <button>SELECT</button>
+                </div>
+                <div class="valve">
+                        <div>VALVE TROMBONE</div>
+                        <h2>$1200</h2>
+                        <ol>
+                            <li>Plays similar to a Trumpet</li>
+                            <li>Great for Jazz Bands</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum.</li>
+                            
+                        </ol>
+                        <button>SELECT</button>
+                </div>
+            </section>
         </div>
-        <section id="pricing">
-            <div class="tenor">
-                <div>TENOR TROMBONE</div>
-                <h2>$600</h2>
-                <ol>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum dolor.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button>SELECT</button>
-            </div>
-            <div class=bass>
-                    <div>BASS TROMBONE</div>
-                    <h2>$900</h2>
-                    <ol>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
-                    </ol>
-                    <button>SELECT</button>
-            </div>
-            <div class="valve">
-                    <div>VALVE TROMBONE</div>
-                    <h2>$1200</h2>
-                    <ol>
-                        <li>Plays similar to a Trumpet</li>
-                        <li>Great for Jazz Bands</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
-                        
-                    </ol>
-                    <button>SELECT</button>
-            </div>
-        </section>
     </main>
     <footer>
         <a href="#">Privacy</a>
