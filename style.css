@@ -102,4 +102,161 @@ footer {
 
 #features {
     margin-top: 30px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 10vw;
+    color: darkorange;
+}
+
+.desc {
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+article {
+    flex-direction: row;
+    display: flex;
+}
+
+#howitworks {
+    display: flex;
+    justify-content: center;
+}
+
+#pricing {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tenor,
+.bass,
+.valve {
+    display: flex;
+    border: black solid 1px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.level li {
+    padding: 5px;
+    display: list-item;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    background-color: #f1c40f;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    display: block;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+li {
+    list-style: none;
+    display: list-item;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media (max-width: 800px) {
+#pricing {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 650px) {
+nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+}
+
+@media (max-width: 550px) {
+#features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+}
 }
